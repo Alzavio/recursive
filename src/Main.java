@@ -27,7 +27,13 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int test = AttemptedFactorial(31)+1;
-        System.out.println(test);
+        long millis1 = System.currentTimeMillis();
+
+        int test = AttemptedFactorial(9000)+1;
+
+        long millis2 = System.currentTimeMillis();
+        long diff = millis2 - millis1;
+
+        System.out.println(test+" "+millis1+" "+millis2+" "+diff);
     }
 }
